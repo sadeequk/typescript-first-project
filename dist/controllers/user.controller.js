@@ -20,7 +20,7 @@ const createUser = async (user) => {
             role: user.role,
             phone: user.phone ?? null,
             picture: null,
-            verified: user.verified ?? false,
+            // verified: user.verified ?? false,
             suspended: user.suspended ?? false
         });
         if (!doc.verified) {

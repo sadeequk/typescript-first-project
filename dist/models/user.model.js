@@ -49,7 +49,7 @@ const schema = new mongoose_1.Schema({
     verified: {
         type: Boolean,
         required: false,
-        default: false
+        default: true,
     },
     suspended: {
         type: Boolean,

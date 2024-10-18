@@ -12,7 +12,7 @@ export const createUser = async (user: {
   role: 'super' | 'admin' | 'user';
   phone?: string;
   picture?: { fileName: string; buffer: Buffer; mimetype?: string };
-  verified?: boolean;
+  // verified?: boolean;
   suspended?: boolean;
 }) => {
   try {
@@ -28,7 +28,7 @@ export const createUser = async (user: {
       role: user.role,
       phone: user.phone ?? null,
       picture: null,
-      verified: user.verified ?? false,
+      // verified: user.verified ?? false,
       suspended: user.suspended ?? false
     });
 

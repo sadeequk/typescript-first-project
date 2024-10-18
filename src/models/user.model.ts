@@ -47,11 +47,11 @@ const schema: Schema = new Schema<Models.User>(
       required: true,
       enum: ['super', 'admin', 'user']
     },
-    verified: {
-      type: Boolean,
-      required: false,
-      default: false
-    },
+    // verified: {
+    //   type: Boolean,
+    //   required: false,
+    //   default: true,
+    // },
     suspended: {
       type: Boolean,
       required: false,
